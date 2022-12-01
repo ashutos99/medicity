@@ -1,0 +1,260 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title>Virat Medicity</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/animate.min.css"/>
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="assets/css/slick.min.css"/>
+    <link rel="stylesheet" href="assets/css/nice-select.css"/>
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css"/>
+    <link rel="stylesheet" href="assets/css/odometer.min.css"/>
+    <link rel="stylesheet" href="assets/css/flaticon.css"/>
+    <link rel="stylesheet" href="assets/css/meanmenu.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <!--bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="whatsapp">
+        <a href="https://wa.me/+918707850170"><div id="whatsappMain"></div></a>
+    </div>
+    <div id="fixed-social">
+        <div>
+            <a href="#" class="fixed-facebook" target="_blank"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+        </div>
+        <div>
+            <a href="#" class="fixed-twitter" target="_blank"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
+        </div>
+       
+        <div>
+            <a href="#" class="fixed-linkedin" target="_blank"><i class="fa fa-linkedin"></i> <span>LinkedIn</span></a>
+        </div>
+       
+   </div>
+    <form id="form1" runat="server">
+    <header class="header-area">
+        <div class="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <ul class="header-contact-info">
+                           <%-- <li class="text-white"><i class="far fa-clock"></i> Mon - Fri 09:00 - 19:00</li>--%>
+                            <li><i class="fas fa-phone"></i><a href="#" class="text-white">+91 8707850170 </a></li>
+                            <li><i class="far fa-paper-plane"></i> <a href="#" class="text-white"><span class="">viratmedicity@gmail.com </span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="header-right-content">
+                            <ul class="top-header-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-area">
+            <div class="fovia-responsive-nav">
+                <div class="container">
+                    <div class="fovia-responsive-menu">
+                        <div class="logo">
+                            <a href="default.aspx">
+                                <img src="assets/img/logo.png" alt="logo"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fovia-nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand db" href="Default.aspx">
+                            <img src="assets/img/logo.png" alt="logo"/>
+                        </a>
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a href="Default.aspx" class="nav-link">HOME</a></li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">ABOUT US <i class="fas fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="aboutus.aspx" class="nav-link">ABOUT US </a></li>
+                                         <li class="nav-item"><a href="director-message.aspx" class="nav-link">DIRECTOR MESSAGE </a></li>
+                                        <li class="nav-item"><a href="board-of-doctors.aspx" class="nav-link">BOARD OF DOCTORS </a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link">VISION & MISSION</a></li>
+                                       
+                                    </ul>
+
+                                    
+                           
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">FACILITIES <i class="fas fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                     <%--   <li class="nav-item"><a href="#" class="nav-link"> 24 HOURS EMERGENCY </a></li>--%>
+                                        <li class="nav-item"><a href="diagnosis.aspx" class="nav-link">DIAGNOSTIC</a></li>
+                                        <li class="nav-item"><a href="house_pharmacy.aspx" class="nav-link">IN HOUSE PHARMACY</a></li>
+                                        <li class="nav-item"><a href="icu_services.aspx" class="nav-link">I.C.U. SERVICES</a></li>
+                                        <li class="nav-item"><a href="ventilator_services.aspx" class="nav-link">VENTILATOR SERVICES</a></li>
+                                        <li class="nav-item"><a href="nicu_services.aspx" class="nav-link">N.I.C.U. SERVICES</a></li>
+                                        <li class="nav-item"><a href="health_checkup_plan.aspx" class="nav-link">HEALTH CHECKUP PLAN</a></li>
+                                        <li class="nav-item"><a href="tpa_health_services.aspx" class="nav-link">T.P.A. HEALTH CARD SERVICES</a></li>
+                                        <li class="nav-item"><a href="insurance_health_card_services.aspx" class="nav-link">INSURANCE HEALTH CARD SERVICES</a></li>
+                                         <li class="nav-item"><a href="physiotherapy.aspx" class="nav-link">PHYSIOTHERAPY</a></li>
+                                       
+                                      </ul>
+
+                                </li>
+                              
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">SPECIALITIES <i class="fas fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <%--<li class="nav-item"><a href="#" class="nav-link">GENERAL MEDICINE </a></li>--%>
+                                        <li class="nav-item"><a href="general_surgery.aspx" class="nav-link">GENERAL SURGERY</a></li>
+                                        <li class="nav-item"><a href="opthopaedics.aspx" class="nav-link">ORTHOPAEDICS</a></li>
+                                        <li class="nav-item"><a href="gynae_obstetrics.aspx" class="nav-link">GYNAE AND OBSTETRICS</a></li>
+                                        <li class="nav-item"><a href="respiratory.aspx" class="nav-link">RESPIRATORY</a></li>
+                                        <li class="nav-item"><a href="thoracic_surgery.aspx" class="nav-link">THORACIC SURGERY</a></li>
+                                        <li class="nav-item"><a href="pediatrics.aspx" class="nav-link">PEDIATRICS</a></li>
+                                       
+                                      </ul>
+
+                                </li>
+
+                               <li class="nav-item">
+                                    <a href="#" class="nav-link">SUPER SPECIALITIES <i class="fas fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a href="cardiology_department.aspx" class="nav-link">CARDIOLOGY </a></li>
+                                        <li class="nav-item"><a href="neuroscience.aspx" class="nav-link">NEUROSCIENCES</a></li>
+                                        <li class="nav-item"><a href="gastro_sciences.aspx" class="nav-link">GASTRO SCIENCES</a></li>
+                                        <li class="nav-item"><a href="plastic_surgery.aspx" class="nav-link">PLASTIC SURGERY</a></li>
+                                      <%--  <li class="nav-item"><a href="#" class="nav-link">ONCOLOGY</a></li>--%>
+                                        <li class="nav-item"><a href="plastic_surgery.aspx" class="nav-link">PEDIATRIC SURGERY</a></li>
+                                        
+                                       
+                                      </ul>
+
+                                </li>
+                                
+                                <li class="nav-item"><a href="gallery.aspx" class="nav-link">GALLERY</a></li>
+                                 <li class="nav-item"><a href="video.aspx" class="nav-link">VIDEOS</a></li>
+                              
+                                <li class="nav-item"><a href="contactus.aspx" class="nav-link">CONTACT US</a></li>
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   
+      <section class="footer-area footer_img">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <div class="logo">
+                            <h3>ABOUT US </h3>
+                            <p style="text-align:justify">We at Virat Medicity have comprehensive patient care set up to provide world class 
+                                diagnostic and therapeutic treatments to our patients. Our latest technologies
+                                 and equipment have made us evolve into a rare centre of excellence. </p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget pl-5">
+                        <h3>QUICK LINK</h3>
+                        <ul class="departments-list">
+                            <li><a href="Default.aspx">Home </a></li>
+                            <li><a href="aboutus.aspx">About Us</a></li>
+                            <li><a href="board-of-doctors.aspx">Board of Doctors</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h3>CONTACT US</h3>
+                        <ul class="opening-hours">
+                            <li><i class="fa fa-map-marker"></i> Kharika, Vrindavan yojna Sector- 6C ,
+Near Bala ji mandir, Neelmatha Road,
+Lucknow, Uttar Pradesh, India</li>
+                            <li><i class="fa fa-envelope"></i>  viratmedicity@gmail.com </li>
+                            <li><i class="fa fa-phone "></i> +91 8707850170 </li>
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <p> © 2021 Virat Medicity  All Rights Reserved | Design &amp; Developed By <a href="http://www.sigmasoftwares.org/" target="_blank" style="color:#fff; font-weight:bold;">  SigmaIT Softwares Designers Pvt. Ltd.</a></p>
+            </div>
+        </div>
+    </section>
+    <div class="go-top"><i class="fas fa-chevron-up"></i></div>
+ 
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/main.js"></script>
+        <!--Gallery-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!--End Gallery-->
+    <script>
+        $('[data-fancybox="gallery"]').fancybox({
+            buttons: [
+              "slideShow",
+              "thumbs",
+              "zoom",
+              "fullScreen",
+              "share",
+              "close"
+            ],
+            loop: false,
+            protect: true
+        });
+
+    </script>
+    </form>
+</body>
+</html>
